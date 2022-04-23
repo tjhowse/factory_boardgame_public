@@ -34,7 +34,7 @@ Power tokens are circular with a lightning bolt on them. These represent power i
 
 ![](img/mine_v1.png)
 
-Mines are the pieces with a number and a plus symbol in the centre. They produce raw material for your factory. They have a symbol next to the output peg that shows which material they produce. You can activate a mine by placing a power token on it if a dice is rolled with a value equal to or greater than the number on the mine. When the mine of a machine is consumed, its power token is removed and returned to the shared pool.
+Mines are the pieces with a number and a plus symbol in the centre. They produce raw material for your factory. They have a symbol next to the output peg that shows which material they produce. If a dice is rolled with a value equal to or higher than the number on the mine you can choose to place a power token on it to activate it. The power token is removed from the mine and returned to the shared pool when the resource is consumed from the mine.
 
 ### Machines
 
@@ -59,6 +59,15 @@ These pieces consume a particular resource and produce power tokens. When all in
 ![](img/conveyor_v1.png)
 
 Conveyors are the pieces with the “«««” symbol. Conveyers move resources around your factory, from their inputs to their output. Conveyors can be chained together. You are not allowed mix different resources on a conveyor - a conveyor can only convey one resource type to one destination. If multiple producers feeding a conveyor are powered you can choose which producer to depower to activate the consumer at the end of the conveyor chain.
+
+In this example there are two circle mines feeding onto a conveyer, leading to the circle input of a machine. This is a valid configuration, and a good way to ensure your machine has a steady supply of circle resources!
+
+![](img/conveyor_demo_v1.png)
+
+In this example there are two different resources feeding onto the same conveyor, and one of them does not match the resource type on the input to the machine! Calamity!
+![](img/conveyor_invalid_v1.png)
+
+
 
 ## Construction
 ### Buying and adding pieces
