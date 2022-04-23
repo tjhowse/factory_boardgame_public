@@ -67,8 +67,6 @@ In this example there are two circle mines feeding onto a conveyer, leading to t
 In this example there are two different resources feeding onto the same conveyor, and one of them does not match the resource type on the input to the machine! Calamity!
 ![](img/conveyor_invalid_v1.png)
 
-
-
 ## Construction
 ### Buying and adding pieces
 If you choose to buy on your turn, pieces can be taken from the shared pool and placed directly into your factory, or placed into your reserve. Pieces can be added from your reserve any time during the game. Pieces cost their tier value.
