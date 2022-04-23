@@ -1,6 +1,6 @@
 # Factory board game
 
-Hello! Thanks for volunteering to test out a prototype of my board game! This is a game about building a factory. You and your friends will build your factories, trade on the market and complete contracts to earn victory points. Some contracts will step the game to the next tier, unlocking new components.
+Hello! Thanks for volunteering to test out a prototype of my board game! This is a game about building a factory. You and your friends will build your factories, trade resources on the market and complete contracts to earn victory points. Some contracts will step the game to the next tier, unlocking new components.
 
 ## Game setup
 
