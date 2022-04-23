@@ -64,7 +64,8 @@ In this example there are two circle mines feeding onto a conveyer, leading to t
 
 ![](img/conveyor_demo_v1.png)
 
-In this example there are two different resources feeding onto the same conveyor, and one of them does not match the resource type on the input to the machine! Calamity!
+In this example there are two different resources feeding onto the same conveyor, and one of them does not match the resource type on the input to the machine! Calamity! (Disregard the colour of the pointer triangle - this is a prototyping issue)
+
 ![](img/conveyor_invalid_v1.png)
 
 ## Construction
