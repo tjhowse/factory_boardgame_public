@@ -41,7 +41,7 @@ Mines are the pieces with a number and a plus symbol in the centre. They produce
 
 ![](img/machine_v1.png)
 
-Machines are the pieces with inputs sockets and outputs pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be powered if all of its inputs are powered and you choose to place a power token on it. When the output of a machine is consumed, its power token is removed and returned to the shared pool.
+Machines are the pieces with input sockets and output pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be powered if all of its inputs are powered and you choose to place a power token on it. When the output of a machine is consumed, its power token is removed and returned to the shared pool.
 
 ### Market
 
@@ -59,9 +59,9 @@ These pieces consume a particular resource and produce power tokens. When all in
 
 ![](img/conveyor_v1.png)
 
-Conveyors are the pieces with the “«««” symbol. Conveyers move resources around your factory, from their inputs to their output. Conveyors can be chained together. You are not allowed mix different resources on a conveyor - a conveyor can only convey one resource type to one destination. If multiple producers feeding a conveyor are powered you can choose which producer to depower to activate the consumer at the end of the conveyor chain.
+Conveyors are the pieces with the “«««” symbol. Conveyors move resources around your factory, from their inputs to their output. Conveyors can be chained together. You are not allowed to mix different resources on a conveyor - a conveyor can only convey one resource type to one destination. If multiple producers feeding a conveyor are powered you can choose which producer to depower to activate the consumer at the end of the conveyor chain.
 
-In this example there are two circle mines feeding onto a conveyer, leading to the circle input of a machine. This is a valid configuration, and a good way to ensure your machine has a steady supply of circle resources!
+In this example there are two circle mines feeding onto a conveyor, leading to the circle input of a machine. This is a valid configuration, and a good way to ensure your machine has a steady supply of circle resources!
 
 ![](img/conveyor_demo_v1.png)
 
@@ -139,4 +139,4 @@ The game starts at tier 1. As the game progresses further tiers will be unlocked
 
 A contract is an agreement that you will produce a certain amount of resources in a certain time. At the start of the game some contracts are dealt face-up. You can opt to claim a contract as your turn, and the empty spot is replaced with a contract from the face-down pile. Completing contracts earns victory points, and some contracts also advance the game’s tier. If the game advances to the next tier, all contracts from the current tier become void and count as negative victory points.
 
-To fulfill a contract you must spend a resource of the type below a hole on the contract card, and place a pin in that hole. Once all holes are filled the complete and the victory points are scored. The resource can be taken from any powered producer of that type anywhere in your factory, or directly from your hand in the case of power tokens.
+To fulfil a contract you must spend a resource of the type below a hole on the contract card, and place a pin in that hole. Once all holes are filled the complete and the victory points are scored. The resource can be taken from any powered producer of that type anywhere in your factory, or directly from your hand in the case of power tokens.
