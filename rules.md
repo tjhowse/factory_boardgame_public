@@ -4,25 +4,24 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
 
 ## Game setup
 
-1. Separate all the pieces into their appropriate tiers,
-2. Shuffle all of the tier 1 contracts, deal four contracts face-up and place the remaining contracts face down nearby,
+1. Separate all the pieces into tiers based on the number in the circle on their underside,
+2. Shuffle all of the tier 1 contracts, deal four contracts face-up, and place the remaining contracts face down nearby,
 3. Put all the tier 1 factory pieces in a pile in the centre of the table, accessible to all players.
 4. Give each player a fund tracker set to $10,
-5. Give each player two import pieces, and two export pieces,
-6. Begin! The player with the longest name goes first and play proceeds clockwise.
+5. Begin! The player with the longest name goes first and play proceeds clockwise.
 
 ## Round order
 
-1. Player turns, Each player chooses one of the following action:
+1. Player turns. Each player chooses one of the following actions:
     * Roll a dice for production. All players benefit,
     * Buy new factory pieces from the pool,
     * Buy or sell resources from the market,
     * Declare a shutdown to rebuild your factory. Start a 1 minute timer. When the timer runs out you must accept your factory as-is.
 2. Production:
     * Everyone gets three power tokens,
-    * A dice is rolled, every mine with an equal or higher number can be activated,
-    * Every machine with all inputs activated can be activated, up to the number of power tokens available. This deactivates its inputs.
-    * Remaining power tokens return to the pool.
+    * A dice is rolled, every mine with an equal or higher number can be activated if you have the power tokens available,
+    * Every machine with all inputs activated can be activated, if you have power tokens available. This deactivates its inputs.
+    * Remaining unused power tokens return to the pool.
 
 ## Parts
 ### Power Tokens
