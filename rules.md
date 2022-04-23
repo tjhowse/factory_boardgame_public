@@ -13,6 +13,7 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
 ## Round order
 
 1. Player turns. Each player chooses one of the following actions:
+    * Claim a contract,
     * Roll a dice for production. All players benefit,
     * Buy new factory pieces from the pool,
     * Buy or sell resources from the market,
@@ -136,6 +137,6 @@ The game starts at tier 1. As the game progresses further tiers will be unlocked
 
 ![](img/contract_v1.png)
 
-A contract is an agreement that you will produce a certain amount of resources in a certain time. At the start of the game some contracts are dealt face-up. You can opt to claim a contract, and the empty spot is replaced with a contract from the face-down pile. Completing contracts earns victory points, and some contracts also advance the game’s tier. If the game advances to the next tier, all contracts from the current tier become void and count as negative victory points.
+A contract is an agreement that you will produce a certain amount of resources in a certain time. At the start of the game some contracts are dealt face-up. You can opt to claim a contract as your turn, and the empty spot is replaced with a contract from the face-down pile. Completing contracts earns victory points, and some contracts also advance the game’s tier. If the game advances to the next tier, all contracts from the current tier become void and count as negative victory points.
 
 To fulfill a contract you must spend a resource of the type below a hole on the contract card, and place a pin in that hole. Once all holes are filled the complete and the victory points are scored. The resource can be taken from any powered producer of that type anywhere in your factory, or directly from your hand in the case of power tokens.
