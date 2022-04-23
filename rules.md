@@ -18,7 +18,7 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
     * Buy or sell resources from the market,
     * Declare a shutdown to rebuild your factory. Start a 1 minute timer. When the timer runs out you must accept your factory as-is.
 2. Production:
-    * Everyone gets three power tokens,
+    * Everyone gains three power tokens,
     * A dice is rolled, every mine with an equal or higher number can be activated if you have the power tokens available,
     * Every machine with all inputs activated can be activated, if you have power tokens available. This deactivates its inputs.
     * Remaining unused power tokens return to the pool.
