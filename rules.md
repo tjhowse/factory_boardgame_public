@@ -28,7 +28,7 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
 
 ![](img/power_token_v1.png)
 
-Power tokens are circular with a lightning bolt on them. These represent power in your factory. You gain three at the start of the production phase. You can generate more power in your factory. Power tokens are lost to the shared pool when removed from your factory, or at the end of the production phase.
+Power tokens are circular with a lightning bolt on them. These represent power in your factory. You gain three at the start of the production phase. You can generate more power in your factory. Power tokens are lost to the shared pool when removed from your factory. Any power tokens remaining in hand are lost to the shared pool at the end of the production phase.
 
 ### Mines
 
