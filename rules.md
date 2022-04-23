@@ -79,7 +79,7 @@ You cannot move or remove a piece from your factory without declaring a "shutdow
 
 ![](img/market_board_v1.png)
 
-The market is a shared board that tracks the prices of resources on the market. Selling resources onto the market drives the price down as it becomes more abundant, buying resources drives the price up as it becomes more scarce. Resources are imported and exported from a player's factory via Market tiles. You can only trade on the market if you choose the Trade action on your turn.
+The market is a shared board that tracks the prices of resources on the market. Selling resources onto the market drives the price down as it becomes more abundant, buying resources drives the price up as it becomes more scarce. Resources are imported and exported from a player's factory via Market tiles. You can only trade on the market if you choose the Trade action on your turn. If the peg reaches the limit of the market board that resource can still be bought or sold for the indicated price without moving the peg.
 
 ### Market example
 
@@ -103,7 +103,7 @@ I place one of my remaining power tokens on the market producer tile.
 
 ![](img/market_demo_step_5_v1.png)
 
-I place my last power token on my cross factory, returning the two power tokens from the market producer and mine tiles to the shared pool.
+I place my last power token on my cross factory, discarding the two power tokens to the shared pool.
 
 ![](img/market_demo_step_6_v1.png)
 
