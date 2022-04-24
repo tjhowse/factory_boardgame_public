@@ -51,7 +51,7 @@ Machines are the pieces with input sockets and output pegs. Each input or output
 
 These pices allow resources to be bought and sold between your factory and the market. See "The Market", below.
 
-NOTE: The above picture shows a specific resource symbol on the Market tile. Ignore that.
+NOTE: Some of the pictures in these rules show a specific resource symbol on the Market tile. Ignore that.
 
 ### Generators
 
@@ -87,8 +87,6 @@ You cannot move or remove a piece from your factory without declaring a "shutdow
 The market is a shared board that tracks the prices of resources on the market. Selling resources onto the market drives the price down as it becomes more abundant, buying resources drives the price up as it becomes more scarce. Resources are imported and exported from a player's factory via Market tiles. If the peg reaches the limit of the market board that resource can still be bought or sold for the indicated price without moving the peg.
 
 ### Market example
-
-NOTE: The below pictures show a specific resource symbol on the Market tile. Ignore that.
 
 I would like to use my factory to produce a cross resource. I have three power tokens, and a 5 was rolled on the die.
 
