@@ -24,6 +24,7 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
     * Everyone gains three power tokens.
     * A dice is rolled, every mine with an equal or higher number can be activated if you have the power tokens available.
     * Every machine with all inputs activated can be activated, if you have power tokens available. This deactivates its inputs.
+    * Randomly add two factory pieces per player to the pile in the centre of the table.
 
 ## Parts
 ### Power Tokens
