@@ -15,7 +15,7 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
 
 1. Player turns. A player can choose from the following two options:
     * Declare a shutdown:
-        * Rebuild your factory. Remove all power tokens and start a 1 minute timer. When the timer runs out you must accept your factory as-is.
+        * Rebuild your factory. Remove all power tokens and start a 1 minute timer. Other players can have their turn during your shutdown. When the timer runs out you must accept your factory as-is.
     * Normal turn. Any number of the following:
         * Claim contracts.
         * Buy new factory pieces from the pool.
