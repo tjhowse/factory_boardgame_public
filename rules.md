@@ -8,56 +8,77 @@ Hello! Thanks for volunteering to test out a prototype of my board game! This is
 2. Shuffle all of the tier 1 contracts, deal four contracts face-up, and place the remaining contracts face down nearby.
 3. Randomly take five tier 1 factory pieces per player and put them face-up in the centre of the table, accessible to all players.
 4. Give each player a fund tracker set to $5.
-5. Set the prices on the market to the middle position.
-6. Begin! The player with the longest name goes first and play proceeds clockwise.
+5. Set the prices on the market to the marked positions for each resource.
+6. Begin! The player with the longest name goes first.
 
 ## Round order
 
-1. Player turns. A player can choose from the following two options:
-    * Declare a shutdown:
-        * Rebuild your factory. Remove all power tokens and start a 1 minute timer. Other players can have their turn during your shutdown. When the timer runs out you must accept your factory as-is.
-    * Normal turn. Any number of the following:
-        * Claim contracts.
-        * Buy new factory pieces from the pool.
-        * Buy or sell resources from the market.
-2. Production. Each of the following happens in sequence:
+A round consists of two phases:
+
+1. Construction phase. The current player chooses one of the following options and then play proceeds clockwise until every player has passed.
+    * Claim a contract.
+    * Buy a factory piece from the pool.
+        * Reduce your funds by the tier value of the piece,
+        * Refill the pool from the parts bag, and
+        * Add the bought piece to your factory.
+    * Pass.
+2. Production phase.
     * Everyone gains three power tokens.
-    * A dice is rolled, every mine with an equal or higher number can be activated if you have the power tokens available.
-    * Every machine with all inputs activated can be activated, if you have power tokens available. This deactivates its inputs.
-    * Randomly add two factory pieces per player to the pile in the centre of the table.
+    * All unconnected or invalidly connected pieces are returned to the shared pool.
+    * A dice is rolled.
+
+    Then the current player chooses one of the following options and play proceeds clockwise until every player has passed.
+
+    * Activate an eligible piece in your factory with a power token.
+    * Buy or sell a resource on the market.
+    * Pass.
+
+## Activation
+
+A piece can be activated during the production phase by placing a power token onto it from the player's hand. A piece can host a maximum of one power token. A piece can only be activated if ALL of its activation requirements are met. A piece is deactivated when its output is consumed by another piece connected to an output, or if its output is used to fulfill part of a contract.
+
+### Dice roll
+![](img/number_activation_requirement.png)
+
+Some pieces are marked with a number and a plus symbol. These pieces cannot be activated unless a dice was rolled with an equal or higher value than that shown on the piece.
+
+### Material requirement
+![](img/input_activation_requirement.png)
+
+Some pieces are marked with a material symbol adjacent to a socket. These pieces cannot be activated unless every input is connected to a matching output on an activated piece.
 
 ## Parts
 ### Power Tokens
 
 ![](img/power_token_v1.png)
 
-Power tokens are circular with a lightning bolt on them. These represent power in your factory. You add three to your hand at the start of the production phase. You can gain more by generating power in your factory. Power tokens are lost to the shared pool when removed from your factory when a piece deactivates. A tile can have a maximum of one power token on it.
+Power tokens are circular with a lightning bolt on them. These represent power in your factory. You add three to your hand at the start of the production phase. You can gain more by generating power in your factory. A piece can have a maximum of one power token on it. You can hold a maximum of five power tokens at a time.
 
 ### Mines
 
 ![](img/mine_v1.png)
 
-Mines are the pieces with a number and a plus symbol in the centre. They produce raw material for your factory. They have a symbol next to the output peg that shows which material they produce. If a dice is rolled with a value equal to or higher than the number on the mine you can choose to place a power token on it to activate it. The power token is removed from the mine and returned to the shared pool when the resource is consumed from the mine.
+Mines produce raw material for your factory. They have a symbol next to the output peg that shows which material they produce.
 
 ### Machines
 
 ![](img/machine_v1.png)
 
-Machines are the pieces with input sockets and output pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be powered if all of its inputs are powered and you choose to place a power token on it. When the output of a machine is consumed, its power token is removed and returned to the shared pool.
+Machines are the pieces with input sockets and output pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be powered if all of its inputs are powered and you choose to place a power token on it. A machine is deactivated when its product is consumed by another piece connected to its output, or the output is used to fulfill a contract. When deactivated its power token is discarded to the shared pool
 
 ### Market
 
-![](img/market_v1.png)
+![](img/market_v2.png)
 
-These pices allow resources to be bought and sold between your factory and the market. See "The Market", below.
-
-NOTE: Some of the pictures in these rules show a specific resource symbol on the Market tile. Ignore that.
+These pices allow resources to be bought and sold between your factory and the market. See "The Market", below. You must activate a market tile with a power token in order to bring resources into your factory from the market via that tile.
 
 ### Generators
 
 ![](img/generator_v1.png)
 
-These pieces consume a particular resource and produce power tokens. When all inputs are activated the power tokens enter your hand directly from the shared pool.
+These pieces consume a particular resource and produce power tokens. When all inputs are activated the power tokens enter your hand directly from the shared pool. You do not need to play a power token onto a generator to activate it.
+
+PROBLEM: In the current incarnation a mine can be activated multiple times during the production phase as long as the player has power tokens. This means it is easy to generate infinite power. Consider removing/reworking generators, or limiting the number of times a mine can be activated. That's hard to track though.
 
 ### Conveyors
 
@@ -73,18 +94,13 @@ In this example there are two different resources feeding onto the same conveyor
 
 ![](img/conveyor_invalid_v1.png)
 
-## Construction
-### Buying and adding pieces
-If you choose to buy on your turn, pieces can be taken from the shared pool and placed directly into your factory, or placed into your reserve. Pieces can be added from your reserve any time during the game. Pieces cost their tier value.
-
-### Moving and removing pieces
-You cannot move or remove a piece from your factory without declaring a "shutdown" on your turn. This takes your whole turn. You have one minute from your declaration to rearrange your factory with the pieces you have, including your reserve. When one minute has passed your factory is locked, and any unplaced pieces enter your reserve.
-
 ## The Market
 
 ![](img/market_board_v1.png)
 
-The market is a shared board that tracks the prices of resources on the market. Selling resources onto the market drives the price down as it becomes more abundant, buying resources drives the price up as it becomes more scarce. Resources are imported and exported from a player's factory via Market tiles. If the peg reaches the limit of the market board that resource can still be bought or sold for the indicated price without moving the peg.
+NOTE: This picture of the market board does not show the starting position lines.
+
+The market is a shared board that tracks the prices of resources on the market. Selling resources onto the market drives the price down as it becomes more abundant, buying resources drives the price up as it becomes more scarce. Resources are imported and exported from a player's factory via Market pieces. If the peg reaches the limit of the market board that resource can still be bought or sold for the indicated price without moving the peg.
 
 ### Market example
 
@@ -129,7 +145,7 @@ I collect $3 for the sale.
 When buying a resource from the market you move the peg up one position in the corresponding column and pay the price below the destination hole. You then place a power token from your hand on the market tile in your factory for that resource.
 
 ### Selling
-When selling a resource to the market you move the peg down one position in the corresponding column and earn the price below the destination hole.
+When selling a resource to the market you move the peg down one position in the corresponding column and earn the price below the destination hole. You do not need to activate a market piece to sell.
 
 ### Power
 NOTE: Power can no longer be traded on the market. Ignore that column on the market board if your set has one.
@@ -141,6 +157,8 @@ The game starts at tier 1. As the game progresses further tiers will be unlocked
 
 ![](img/contract_v1.png)
 
-A contract is an agreement that you will produce a certain amount of resources in a certain time. At the start of the game some contracts are dealt face-up. You can opt to claim a contract on your turn, and the empty spot is replaced with a contract from the face-down pile. Completing contracts earns victory points, and some contracts also advance the game’s tier. If the game advances to the next tier, all contracts from the current tier become void and count as negative victory points.
+A contract is an agreement that you will produce a certain amount of resources in a certain time. At the start of the game some contracts are dealt face-up. You can opt to claim a contract on your turn, and the empty spot is replaced with a contract from the face-down pile. Completing contracts earns victory points, and some contracts also advance the game’s tier. If the game advances to the next tier, unfulfilled contracts from the current tier become void and count as negative victory points.
 
 To fulfil a contract you must spend a resource of the type below a hole on the contract card, and place a pin in that hole. Once all holes are filled the complete and the victory points are scored. The resource can be taken from any powered producer of that type anywhere in your factory, or directly from your hand in the case of power tokens.
+
+PROBLEM: Can contracts be fulfilled by resources bought from the market?
