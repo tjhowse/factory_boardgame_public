@@ -30,8 +30,9 @@ A round consists of two phases:
     Then the current player chooses one of the following options and play proceeds clockwise until every player has passed.
 
     * Activate an eligible piece in your factory with a power token.
-    * Buy or sell a resource on the market.
     * Pass.
+
+    At the end of the production phase all power tokens hosted on pieces are returned to the shared pool.
 
 ## Activation
 
@@ -45,7 +46,7 @@ Some pieces are marked with a number and a plus symbol. These pieces cannot be a
 ### Material requirement
 ![](img/input_activation_requirement.png)
 
-Some pieces are marked with a material symbol adjacent to a socket. These pieces cannot be activated unless every input is connected to a matching output on an activated piece.
+Some pieces are marked with a material symbol adjacent to a socket. These pieces cannot be activated unless every input is connected to a matching output on an activated piece, either directly or via a conveyer.
 
 ## Parts
 ### Power Tokens
@@ -64,27 +65,25 @@ Mines produce raw material for your factory. They have a symbol next to the outp
 
 ![](img/machine_v1.png)
 
-Machines are the pieces with input sockets and output pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be powered if all of its inputs are powered and you choose to place a power token on it. A machine is deactivated when its product is consumed by another piece connected to its output, or the output is used to fulfill a contract. When deactivated its power token is discarded to the shared pool
+Machines are the pieces with input sockets and output pegs. Each input or output has a symbol showing which input it consumes, or which output it produces. A machine can be activated if all of its inputs are activated and you choose to place a power token on it.
 
 ### Market
 
 ![](img/market_v2.png)
 
-These pices allow resources to be bought and sold between your factory and the market. See "The Market", below. You must activate a market tile with a power token in order to bring resources into your factory from the market via that tile.
+These pices allow resources to be bought and sold between your factory and the market. See "The Market", below. You must activate a market tile with a power token in order to exchange resources between your factory and the market.
 
 ### Generators
 
 ![](img/generator_v1.png)
 
-These pieces consume a particular resource and produce power tokens. When all inputs are activated the power tokens enter your hand directly from the shared pool. You do not need to play a power token onto a generator to activate it.
-
-PROBLEM: In the current incarnation a mine can be activated multiple times during the production phase as long as the player has power tokens. This means it is easy to generate infinite power. Consider removing/reworking generators, or limiting the number of times a mine can be activated. That's hard to track though.
+These pieces consume a particular resource and produce power tokens. When the generator is activated you add the specified number of power tokens into your hand from the shared pool.
 
 ### Conveyors
 
 ![](img/conveyor_v1.png)
 
-Conveyors are the pieces with the “«««” symbol. Conveyors move resources around your factory, from their inputs to their output. Conveyors can be chained together. You are not allowed to mix different resources on a conveyor - a conveyor can only convey one resource type to one destination. If multiple producers feeding a conveyor are powered you can choose which producer to depower to activate the consumer at the end of the conveyor chain.
+Conveyors are the pieces with the “«««” symbol. Conveyors move resources around your factory, from their inputs to their output. Conveyors can be chained together. You are not allowed to mix different resources on a conveyor - a conveyor can only convey one resource type to one destination.
 
 In this example there are two circle mines feeding onto a conveyor, leading to the circle input of a machine. This is a valid configuration, and a good way to ensure your machine has a steady supply of circle resources!
 
@@ -145,7 +144,7 @@ I collect $3 for the sale.
 When buying a resource from the market you move the peg up one position in the corresponding column and pay the price below the destination hole. You then place a power token from your hand on the market tile in your factory for that resource.
 
 ### Selling
-When selling a resource to the market you move the peg down one position in the corresponding column and earn the price below the destination hole. You do not need to activate a market piece to sell.
+When selling a resource to the market you must activate a market selling piece, then move the peg down one position in the corresponding column and earn the price below the destination hole.
 
 ### Power
 NOTE: Power can no longer be traded on the market. Ignore that column on the market board if your set has one.
